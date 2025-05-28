@@ -1,0 +1,24 @@
+---
+openapi: 3.0.3
+info:
+  title: demo-yaml-issue
+  version: 0.1.0
+servers: []
+paths:
+  "/":
+    get:
+      summary: Root endpoint
+      responses:
+        '200':
+          description: GET /
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  date:
+                    type: string
+                required:
+                - date
+              example:
+                date: 2020-01-02
